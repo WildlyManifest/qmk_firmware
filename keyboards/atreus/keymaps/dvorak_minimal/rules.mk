@@ -20,6 +20,3 @@ MOUSEKEY_ENABLE = no	# Mouse keys(+4700)
 
 # use combo for RESET and DEBUG
 COMBO_ENABLE = yes
-
-# for debugging
-CONSOLE_ENABLE = yes
