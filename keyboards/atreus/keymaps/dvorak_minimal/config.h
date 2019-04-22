@@ -15,7 +15,10 @@ more details.
 You should have received a copy of the GNU General Public License along with
 this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#prama once
+#pragma once
+
+/* Debug option */
+#define DEBUG_FW
 
 /*
 Mechanical locking support.
@@ -29,6 +32,6 @@ Not needed!!
 #define ONESHOT_TIMEOUT 2000  // Time (in ms) before the one shot key is released
 
 /* Combos */
-#define COMBO_COUNT 2
+#define COMBO_COUNT 2 // 2 actions: DEBUG and RESET
 #define COMBO_ALLOW_ACTION_KEYS
 #define COMBO_TERM 300
