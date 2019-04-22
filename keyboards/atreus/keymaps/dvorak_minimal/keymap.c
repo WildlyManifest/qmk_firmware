@@ -1,6 +1,6 @@
 /*
-Dvorak WM - A minimal Dvorak layout for the Atreus keyboard
-Copyright (C) 2019 Jason Koh wildlymanifest@fastmail.net
+A minimal Dvorak layout for the Atreus keyboard
+Copyright (C) 2019 Jason Koh <wildlymanifest@fastmail.net>
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the Free
