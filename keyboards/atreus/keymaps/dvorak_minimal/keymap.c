@@ -35,8 +35,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_SCOLON, KC_Q, KC_J, KC_K, KC_X,
         KC_B, KC_M, KC_W, KC_V, KC_Z,
 
-        LSFT(KC_CAPS), KC_LCTL, KC_LALT, OSL(FNNV), KC_SPC, OSL(PUNM),
-        OSL(PUNM), KC_BSPC, OSL(FNNV), KC_RALT, KC_RCTL, RSFT(KC_CAPS)
+        LSFT(KC_CAPS), KC_LGUI, KC_LALT, OSL(PUNM), KC_SPC, KC_LCTL,
+        KC_RCTL, KC_BSPC, OSL(FNNV), KC_RALT, KC_RGUI, RSFT(KC_CAPS)
     ),
     /* punctuation, numeric keypad */
     [PUNM] = LAYOUT(
@@ -44,13 +44,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PSLS, KC_P7, KC_P8, KC_P9, KC_PMNS,
 
         KC_AT, KC_LBRC, KC_RBRC, KC_DLR, KC_CIRC,
-        KC_PAST, KC_P4, KC_P5, KC_P6, KC_PLUS,
+        KC_PAST, KC_P4, KC_P5, KC_P6, KC_PPLS,
 
         KC_HASH, KC_LPRN, KC_RPRN, KC_PERC, KC_AMPR,
         KC_PCMM, KC_P1, KC_P2, KC_P3, KC_PEQL,
 
-        KC_LSFT, KC_LCTL, KC_LALT, KC_ESC, KC_TAB, KC_TRNS,
-        KC_TRNS, KC_ENT, KC_P0, RALT(KC_PDOT), KC_RCTL, RSFT(KC_PENT)
+        KC_LSFT, KC_TRNS, LALT(KC_ESC), KC_TRNS, KC_TAB, KC_TRNS,
+        KC_TRNS, KC_ENT, KC_P0, RALT(KC_PDOT), KC_TRNS, RSFT(KC_PENT)
     ),
     /* function, navigation */
     [FNNV] = LAYOUT(
@@ -63,8 +63,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
         KC_MPRV, KC_MRWD, KC_MPLY, KC_MFFD, KC_MNXT,
 
-        KC_LSFT, KC_LCTL, KC_LALT, KC_TRNS, KC_MUTE, KC_VOLD,
-        KC_VOLU, KC_EJCT, KC_TRNS, RALT(KC_MSTP), KC_RCTL, KC_RSFT
+        KC_LSFT, KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU, KC_TRNS,
+        KC_TRNS, KC_EJCT, KC_TRNS, RALT(KC_MSTP), KC_TRNS, KC_RSFT
     )
 };
 
@@ -83,8 +83,8 @@ combo_t key_combos[COMBO_COUNT] = {
 
 #ifdef DEBUG_FW
 void keyboard_post_init_user(void) {
-    debug_enable=true;
-    debug_matrix=true;
-    debug_keyboard=true;
+    debug_enable = true;
+    debug_matrix = true;
+    debug_keyboard = true;
 }
 #endif
