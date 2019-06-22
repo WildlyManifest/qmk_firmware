@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_SCOLON, KC_Q, KC_J, KC_K, KC_X,
         KC_B, KC_M, KC_W, KC_V, KC_Z,
 
-        KC_LFST, KC_LGUI, KC_LALT, OSL(PUNM), KC_SPC, KC_LCTL,
+        KC_LSFT, KC_LGUI, KC_LALT, OSL(PUNM), KC_SPC, KC_LCTL,
         KC_RCTL, KC_BSPC, OSL(FNNV), KC_RALT, KC_RGUI, KC_RSFT
     ),
     /* punctuation, numeric keypad */
