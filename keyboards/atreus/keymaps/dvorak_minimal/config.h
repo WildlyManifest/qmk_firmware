@@ -29,9 +29,4 @@ Not needed!!
 
 /* one shot modifiers / layers */
 #define ONESHOT_TAP_TOGGLE 3  // Tapping this number of times holds the key until tapped once again.
-#define ONESHOT_TIMEOUT 2000  // Time (in ms) before the one shot key is released
-
-/* Combos */
-#define COMBO_COUNT 2 // 2 actions: DEBUG and RESET
-#define COMBO_ALLOW_ACTION_KEYS
-#define COMBO_TERM 300
+#define ONESHOT_TIMEOUT 1500  // Time (in ms) before the one shot key is released
