@@ -35,8 +35,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_SCOLON, KC_Q, KC_J, KC_K, KC_X,
         KC_B, KC_M, KC_W, KC_V, KC_Z,
 
-        KC_LSFT, KC_LGUI, KC_LALT, MO(FNNM), KC_BSPC, KC_LCTL,
-        KC_RCTL, KC_SPC, MO(PUNV), KC_RALT, KC_RGUI, KC_RSFT
+        KC_LCTL, KC_LGUI, KC_LALT, MO(FNNM), KC_BSPC, KC_LSFT,
+        KC_RSFT, KC_SPC, MO(PUNV), KC_RALT, KC_RGUI, KC_RCTL
     ),
     /* function keys, numeric keypad */
     [FNNM] = LAYOUT(
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PCMM, KC_P1, KC_P2, KC_P3, KC_PEQL,
 
         KC_TRNS, KC_TRNS, LALT_T(KC_EJCT), KC_TRNS, KC_VOLD, KC_TRNS,
-        KC_TRNS, KC_ENT, KC_P0, RALT_T(KC_PDOT), KC_TRNS, RSFT_T(KC_PENT)
+        KC_TRNS, KC_ENT, KC_P0, RALT_T(KC_PDOT), KC_TRNS, RCTL_T(KC_PENT)
     ),
     /* punctuation, navigation */
     [PUNV] = LAYOUT(
